@@ -1,0 +1,4721 @@
+{
+  "latest": {
+    "timestamp": "2026-10-13T05:33:53.568Z",
+    "traffic": {
+      "sensor_id": "TRF-ERD-001",
+      "avg_speed_kmph": 39,
+      "vehicle_count": 57,
+      "congestion_level": "MEDIUM"
+    },
+    "streetlights": {
+      "total": 8,
+      "lights_on": 8,
+      "lights_faulty": 0,
+      "power_watts": 360,
+      "lights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "weather": {
+      "station_id": "WST-ERD-001",
+      "temperature_c": 35.7,
+      "humidity_pct": 57,
+      "rainfall_mm": 0,
+      "wind_speed_kmph": 0
+    },
+    "air": {
+      "monitor_id": "AQM-ERD-001",
+      "pm25": 47.8,
+      "pm10": 76.4,
+      "co_ppm": 0.8,
+      "aqi": 96,
+      "aqi_category": "MODERATE"
+    },
+    "parking": {
+      "lot_id": "PKG-ERD-001",
+      "total_slots": 48,
+      "occupied_slots": 45,
+      "free_slots": 3,
+      "occupancy_pct": 93.8
+    },
+    "emergency": {
+      "open_incidents": 0,
+      "severity": "NONE",
+      "type": "-",
+      "status": "ALL_CLEAR"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "2026-10-13T05:30:58.963Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 36,
+        "vehicle_count": 57,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.1,
+        "humidity_pct": 66,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 55.4,
+        "pm10": 88.7,
+        "co_ppm": 0.9,
+        "aqi": 110,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 26,
+        "free_slots": 22,
+        "occupancy_pct": 54.2
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:00.979Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 36,
+        "vehicle_count": 61,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.2,
+        "humidity_pct": 65,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 6.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 58.7,
+        "pm10": 94,
+        "co_ppm": 1,
+        "aqi": 116,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 25,
+        "free_slots": 23,
+        "occupancy_pct": 52.1
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:02.980Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 33,
+        "vehicle_count": 54,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 30.9,
+        "humidity_pct": 64,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 7.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 63.4,
+        "pm10": 101.4,
+        "co_ppm": 1.1,
+        "aqi": 124,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 24,
+        "free_slots": 24,
+        "occupancy_pct": 50
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:04.996Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 30,
+        "vehicle_count": 57,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.3,
+        "humidity_pct": 65,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 8.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 61,
+        "pm10": 97.6,
+        "co_ppm": 1,
+        "aqi": 120,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 24,
+        "free_slots": 24,
+        "occupancy_pct": 50
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:06.998Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 27,
+        "vehicle_count": 61,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.3,
+        "humidity_pct": 65,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 8.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 57.3,
+        "pm10": 91.7,
+        "co_ppm": 1,
+        "aqi": 113,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 25,
+        "free_slots": 23,
+        "occupancy_pct": 52.1
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:09.008Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 27,
+        "vehicle_count": 55,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31,
+        "humidity_pct": 63,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 8.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 62.1,
+        "pm10": 99.4,
+        "co_ppm": 1,
+        "aqi": 122,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 26,
+        "free_slots": 22,
+        "occupancy_pct": 54.2
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:11.011Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 30,
+        "vehicle_count": 48,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.3,
+        "humidity_pct": 63,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 60.5,
+        "pm10": 96.9,
+        "co_ppm": 1,
+        "aqi": 119,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 28,
+        "free_slots": 20,
+        "occupancy_pct": 58.3
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:13.017Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 34,
+        "vehicle_count": 44,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31,
+        "humidity_pct": 64,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 9.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 61.9,
+        "pm10": 99,
+        "co_ppm": 1,
+        "aqi": 121,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 27,
+        "free_slots": 21,
+        "occupancy_pct": 56.3
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:15.033Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 40,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31,
+        "humidity_pct": 63,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 8.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 63.4,
+        "pm10": 101.4,
+        "co_ppm": 1.1,
+        "aqi": 124,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:17.038Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 46,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.3,
+        "humidity_pct": 62,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 7.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 64.9,
+        "pm10": 103.8,
+        "co_ppm": 1.1,
+        "aqi": 127,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 28,
+        "free_slots": 20,
+        "occupancy_pct": 58.3
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:19.050Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 37,
+        "vehicle_count": 39,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.5,
+        "humidity_pct": 63,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 6.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 68.5,
+        "pm10": 109.6,
+        "co_ppm": 1.1,
+        "aqi": 133,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:21.051Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 40,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.8,
+        "humidity_pct": 61,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 6.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 64,
+        "pm10": 102.4,
+        "co_ppm": 1.1,
+        "aqi": 125,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:23.066Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 36,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.7,
+        "humidity_pct": 61,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 7.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 66.9,
+        "pm10": 107,
+        "co_ppm": 1.1,
+        "aqi": 130,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "FIRE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:25.081Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 35,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.6,
+        "humidity_pct": 62,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 6.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 69.7,
+        "pm10": 111.5,
+        "co_ppm": 1.2,
+        "aqi": 135,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 27,
+        "free_slots": 21,
+        "occupancy_pct": 56.3
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "TRAFFIC_ACCIDENT",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:27.083Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 34,
+        "vehicle_count": 36,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.6,
+        "humidity_pct": 61,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 6.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 65.1,
+        "pm10": 104.2,
+        "co_ppm": 1.1,
+        "aqi": 127,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 27,
+        "free_slots": 21,
+        "occupancy_pct": 56.3
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "TRAFFIC_ACCIDENT",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:29.084Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 37,
+        "vehicle_count": 41,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.6,
+        "humidity_pct": 61,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 60.6,
+        "pm10": 96.9,
+        "co_ppm": 1,
+        "aqi": 119,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "TRAFFIC_ACCIDENT",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:31.089Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 33,
+        "vehicle_count": 34,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 61,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 58,
+        "pm10": 92.8,
+        "co_ppm": 1,
+        "aqi": 114,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 30,
+        "free_slots": 18,
+        "occupancy_pct": 62.5
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:33.100Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 29,
+        "vehicle_count": 36,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 62,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 6.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 54.8,
+        "pm10": 87.7,
+        "co_ppm": 0.9,
+        "aqi": 109,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:35.109Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 40,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.2,
+        "humidity_pct": 61,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 5.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 54.1,
+        "pm10": 86.5,
+        "co_ppm": 0.9,
+        "aqi": 107,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 28,
+        "free_slots": 20,
+        "occupancy_pct": 58.3
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:37.117Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 28,
+        "vehicle_count": 35,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.3,
+        "humidity_pct": 60,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 5.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 55.3,
+        "pm10": 88.5,
+        "co_ppm": 0.9,
+        "aqi": 110,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:39.119Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 31,
+        "vehicle_count": 35,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.4,
+        "humidity_pct": 60,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 4.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 55,
+        "pm10": 87.9,
+        "co_ppm": 0.9,
+        "aqi": 109,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:41.130Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 40,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.1,
+        "humidity_pct": 62,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 4.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 55.3,
+        "pm10": 88.5,
+        "co_ppm": 0.9,
+        "aqi": 110,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:43.145Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 34,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.3,
+        "humidity_pct": 62,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 56.9,
+        "pm10": 91.1,
+        "co_ppm": 0.9,
+        "aqi": 112,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 31,
+        "free_slots": 17,
+        "occupancy_pct": 64.6
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:45.154Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 38,
+        "vehicle_count": 28,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 61,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 3.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 52.2,
+        "pm10": 83.5,
+        "co_ppm": 0.9,
+        "aqi": 104,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 31,
+        "free_slots": 17,
+        "occupancy_pct": 64.6
+      },
+      "emergency": {
+        "open_incidents": 2,
+        "severity": "MEDIUM",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:47.156Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 41,
+        "vehicle_count": 32,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 60,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 4.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 48.4,
+        "pm10": 77.5,
+        "co_ppm": 0.8,
+        "aqi": 97,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 30,
+        "free_slots": 18,
+        "occupancy_pct": 62.5
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:49.162Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 44,
+        "vehicle_count": 32,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.6,
+        "humidity_pct": 58,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 4.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 48.2,
+        "pm10": 77.1,
+        "co_ppm": 0.8,
+        "aqi": 97,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 31,
+        "free_slots": 17,
+        "occupancy_pct": 64.6
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:51.165Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 41,
+        "vehicle_count": 30,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 5,
+        "lights_faulty": 3,
+        "power_watts": 225,
+        "lights": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 59,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 3.6
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 49,
+        "pm10": 78.4,
+        "co_ppm": 0.8,
+        "aqi": 98,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 31,
+        "free_slots": 17,
+        "occupancy_pct": 64.6
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:53.166Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 38,
+        "vehicle_count": 24,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 59,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 3.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 48.9,
+        "pm10": 78.2,
+        "co_ppm": 0.8,
+        "aqi": 98,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 32,
+        "free_slots": 16,
+        "occupancy_pct": 66.7
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:55.171Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 40,
+        "vehicle_count": 19,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 31.9,
+        "humidity_pct": 58,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 4.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 45.5,
+        "pm10": 72.8,
+        "co_ppm": 0.8,
+        "aqi": 92,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 30,
+        "free_slots": 18,
+        "occupancy_pct": 62.5
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:57.175Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 37,
+        "vehicle_count": 21,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32,
+        "humidity_pct": 57,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 3.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 45.1,
+        "pm10": 72.1,
+        "co_ppm": 0.8,
+        "aqi": 91,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 30,
+        "free_slots": 18,
+        "occupancy_pct": 62.5
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:31:59.182Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 33,
+        "vehicle_count": 19,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32,
+        "humidity_pct": 57,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 3.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 47.4,
+        "pm10": 75.8,
+        "co_ppm": 0.8,
+        "aqi": 95,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:01.194Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 13,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.3,
+        "humidity_pct": 57,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 3.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 49.8,
+        "pm10": 79.6,
+        "co_ppm": 0.8,
+        "aqi": 100,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 28,
+        "free_slots": 20,
+        "occupancy_pct": 58.3
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:03.204Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 32,
+        "vehicle_count": 10,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.4,
+        "humidity_pct": 57,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 2.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 53.3,
+        "pm10": 85.2,
+        "co_ppm": 0.9,
+        "aqi": 106,
+        "aqi_category": "UNHEALTHY_SENSITIVE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:05.205Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 34,
+        "vehicle_count": 15,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.6,
+        "humidity_pct": 57,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 2.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 49.8,
+        "pm10": 79.6,
+        "co_ppm": 0.8,
+        "aqi": 100,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 28,
+        "free_slots": 20,
+        "occupancy_pct": 58.3
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:07.209Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 19,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.8,
+        "humidity_pct": 57,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 2.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 44.9,
+        "pm10": 71.9,
+        "co_ppm": 0.7,
+        "aqi": 91,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 29,
+        "free_slots": 19,
+        "occupancy_pct": 60.4
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:09.219Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 37,
+        "vehicle_count": 23,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.1,
+        "humidity_pct": 55,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 2.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 48.7,
+        "pm10": 78,
+        "co_ppm": 0.8,
+        "aqi": 98,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 30,
+        "free_slots": 18,
+        "occupancy_pct": 62.5
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:11.231Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 26,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.1,
+        "humidity_pct": 56,
+        "rainfall_mm": 2.5,
+        "wind_speed_kmph": 2.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 46.7,
+        "pm10": 74.7,
+        "co_ppm": 0.8,
+        "aqi": 94,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 32,
+        "free_slots": 16,
+        "occupancy_pct": 66.7
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:13.240Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 32,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 55,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 2.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 44.7,
+        "pm10": 71.5,
+        "co_ppm": 0.7,
+        "aqi": 90,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 33,
+        "free_slots": 15,
+        "occupancy_pct": 68.8
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:15.248Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 33,
+        "vehicle_count": 36,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 55,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 39.8,
+        "pm10": 63.7,
+        "co_ppm": 0.7,
+        "aqi": 82,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 34,
+        "free_slots": 14,
+        "occupancy_pct": 70.8
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:17.255Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 33,
+        "vehicle_count": 43,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.3,
+        "humidity_pct": 56,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 42.3,
+        "pm10": 67.7,
+        "co_ppm": 0.7,
+        "aqi": 86,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 36,
+        "free_slots": 12,
+        "occupancy_pct": 75
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:19.256Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 47,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.4,
+        "humidity_pct": 57,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 39.4,
+        "pm10": 63.1,
+        "co_ppm": 0.7,
+        "aqi": 81,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 36,
+        "free_slots": 12,
+        "occupancy_pct": 75
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:21.269Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 39,
+        "vehicle_count": 52,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 57,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 2.6
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 34.5,
+        "pm10": 55.1,
+        "co_ppm": 0.6,
+        "aqi": 72,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 36,
+        "free_slots": 12,
+        "occupancy_pct": 75
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:23.282Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 53,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.4,
+        "humidity_pct": 58,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 3.6
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 35.6,
+        "pm10": 57,
+        "co_ppm": 0.6,
+        "aqi": 74,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 34,
+        "free_slots": 14,
+        "occupancy_pct": 70.8
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:25.285Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 44,
+        "vehicle_count": 48,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.3,
+        "humidity_pct": 57,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.6
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 37.1,
+        "pm10": 59.3,
+        "co_ppm": 0.6,
+        "aqi": 77,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 35,
+        "free_slots": 13,
+        "occupancy_pct": 72.9
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:27.290Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 47,
+        "vehicle_count": 55,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.3,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.6
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 33.8,
+        "pm10": 54.1,
+        "co_ppm": 0.6,
+        "aqi": 71,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 37,
+        "free_slots": 11,
+        "occupancy_pct": 77.1
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:29.301Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 50,
+        "vehicle_count": 53,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.1,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 35.4,
+        "pm10": 56.7,
+        "co_ppm": 0.6,
+        "aqi": 74,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:31.303Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 53,
+        "vehicle_count": 46,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 5.6
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 34.3,
+        "pm10": 54.9,
+        "co_ppm": 0.6,
+        "aqi": 72,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 36,
+        "free_slots": 12,
+        "occupancy_pct": 75
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:33.303Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 52,
+        "vehicle_count": 45,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.9,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 32.6,
+        "pm10": 52.2,
+        "co_ppm": 0.5,
+        "aqi": 69,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 37,
+        "free_slots": 11,
+        "occupancy_pct": 77.1
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:35.312Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 52,
+        "vehicle_count": 49,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.2,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 31.3,
+        "pm10": 50.1,
+        "co_ppm": 0.5,
+        "aqi": 66,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:37.320Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 50,
+        "vehicle_count": 53,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.6,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 29.6,
+        "pm10": 47.3,
+        "co_ppm": 0.5,
+        "aqi": 63,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:39.328Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 47,
+        "vehicle_count": 50,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 57,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 5.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 32.6,
+        "pm10": 52.2,
+        "co_ppm": 0.5,
+        "aqi": 69,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:41.338Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 45,
+        "vehicle_count": 45,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.7,
+        "humidity_pct": 56,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 36,
+        "pm10": 57.5,
+        "co_ppm": 0.6,
+        "aqi": 75,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:43.349Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 40,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.7,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 32.7,
+        "pm10": 52.3,
+        "co_ppm": 0.5,
+        "aqi": 69,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:45.362Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 45,
+        "vehicle_count": 35,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.4,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 31.2,
+        "pm10": 49.9,
+        "co_ppm": 0.5,
+        "aqi": 66,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:47.372Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 46,
+        "vehicle_count": 36,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.3,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 4.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 33.6,
+        "pm10": 53.8,
+        "co_ppm": 0.6,
+        "aqi": 71,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:49.388Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 45,
+        "vehicle_count": 41,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 32.8,
+        "pm10": 52.5,
+        "co_ppm": 0.5,
+        "aqi": 69,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:51.391Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 44,
+        "vehicle_count": 34,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.2,
+        "humidity_pct": 60,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 2.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 36.5,
+        "pm10": 58.5,
+        "co_ppm": 0.6,
+        "aqi": 76,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:53.398Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 37,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.6,
+        "humidity_pct": 61,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 2.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 32,
+        "pm10": 51.1,
+        "co_ppm": 0.5,
+        "aqi": 68,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 40,
+        "free_slots": 8,
+        "occupancy_pct": 83.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:55.404Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 43,
+        "vehicle_count": 35,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.9,
+        "humidity_pct": 60,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 36.3,
+        "pm10": 58.1,
+        "co_ppm": 0.6,
+        "aqi": 75,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:57.409Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 41,
+        "vehicle_count": 32,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.8,
+        "humidity_pct": 60,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 34.7,
+        "pm10": 55.5,
+        "co_ppm": 0.6,
+        "aqi": 72,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:32:59.417Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 45,
+        "vehicle_count": 26,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 34.5,
+        "pm10": 55.2,
+        "co_ppm": 0.6,
+        "aqi": 72,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 40,
+        "free_slots": 8,
+        "occupancy_pct": 83.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:01.423Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 19,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.4,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 36.6,
+        "pm10": 58.6,
+        "co_ppm": 0.6,
+        "aqi": 76,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:03.426Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 21,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.7,
+        "humidity_pct": 61,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 2.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 40.8,
+        "pm10": 65.2,
+        "co_ppm": 0.7,
+        "aqi": 83,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:05.430Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 45,
+        "vehicle_count": 24,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.4,
+        "humidity_pct": 60,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 2.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 41.8,
+        "pm10": 66.8,
+        "co_ppm": 0.7,
+        "aqi": 85,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 37,
+        "free_slots": 11,
+        "occupancy_pct": 77.1
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:07.438Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 44,
+        "vehicle_count": 30,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 5,
+        "lights_faulty": 3,
+        "power_watts": 225,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.2,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 3.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 43.2,
+        "pm10": 69.2,
+        "co_ppm": 0.7,
+        "aqi": 88,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:09.441Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 32,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 5,
+        "lights_faulty": 3,
+        "power_watts": 225,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 32.9,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 2.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 39.8,
+        "pm10": 63.7,
+        "co_ppm": 0.7,
+        "aqi": 82,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 38,
+        "free_slots": 10,
+        "occupancy_pct": 79.2
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:11.440Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 40,
+        "vehicle_count": 33,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 5,
+        "lights_faulty": 3,
+        "power_watts": 225,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.3,
+        "humidity_pct": 60,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 2.1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 43.6,
+        "pm10": 69.7,
+        "co_ppm": 0.7,
+        "aqi": 88,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 37,
+        "free_slots": 11,
+        "occupancy_pct": 77.1
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:13.441Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 37,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 5,
+        "lights_faulty": 3,
+        "power_watts": 225,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.6,
+        "humidity_pct": 59,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 1.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 42.6,
+        "pm10": 68.1,
+        "co_ppm": 0.7,
+        "aqi": 87,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:15.448Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 41,
+        "vehicle_count": 32,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 5,
+        "lights_faulty": 3,
+        "power_watts": 225,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.4,
+        "humidity_pct": 58,
+        "rainfall_mm": 5.5,
+        "wind_speed_kmph": 1
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 43,
+        "pm10": 68.8,
+        "co_ppm": 0.7,
+        "aqi": 87,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:17.456Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 43,
+        "vehicle_count": 29,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.6,
+        "humidity_pct": 58,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 40.6,
+        "pm10": 65,
+        "co_ppm": 0.7,
+        "aqi": 83,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:19.461Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 44,
+        "vehicle_count": 24,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.8,
+        "humidity_pct": 56,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 38.7,
+        "pm10": 61.9,
+        "co_ppm": 0.6,
+        "aqi": 80,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:21.464Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 42,
+        "vehicle_count": 27,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.6,
+        "humidity_pct": 57,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 37.9,
+        "pm10": 60.6,
+        "co_ppm": 0.6,
+        "aqi": 78,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:23.471Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 39,
+        "vehicle_count": 29,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.5,
+        "humidity_pct": 57,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 2.5
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 37.2,
+        "pm10": 59.5,
+        "co_ppm": 0.6,
+        "aqi": 77,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 43,
+        "free_slots": 5,
+        "occupancy_pct": 89.6
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:25.478Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 38,
+        "vehicle_count": 34,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.9,
+        "humidity_pct": 59,
+        "rainfall_mm": 4.3,
+        "wind_speed_kmph": 3.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 39,
+        "pm10": 62.4,
+        "co_ppm": 0.6,
+        "aqi": 80,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 44,
+        "free_slots": 4,
+        "occupancy_pct": 91.7
+      },
+      "emergency": {
+        "open_incidents": 1,
+        "severity": "LOW",
+        "type": "POWER_OUTAGE",
+        "status": "DISPATCHED"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:27.483Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 41,
+        "vehicle_count": 40,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 33.6,
+        "humidity_pct": 60,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 2.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 36.5,
+        "pm10": 58.3,
+        "co_ppm": 0.6,
+        "aqi": 76,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 45,
+        "free_slots": 3,
+        "occupancy_pct": 93.8
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:29.496Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 37,
+        "vehicle_count": 46,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 34,
+        "humidity_pct": 60,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 37.2,
+        "pm10": 59.5,
+        "co_ppm": 0.6,
+        "aqi": 77,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 45,
+        "free_slots": 3,
+        "occupancy_pct": 93.8
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:31.500Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 41,
+        "vehicle_count": 46,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 34.4,
+        "humidity_pct": 61,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 40.7,
+        "pm10": 65.2,
+        "co_ppm": 0.7,
+        "aqi": 83,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 43,
+        "free_slots": 5,
+        "occupancy_pct": 89.6
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:33.503Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 43,
+        "vehicle_count": 40,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 34.3,
+        "humidity_pct": 61,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 1.7
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 41.8,
+        "pm10": 66.9,
+        "co_ppm": 0.7,
+        "aqi": 85,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:35.507Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 40,
+        "vehicle_count": 47,
+        "congestion_level": "LOW"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 34.4,
+        "humidity_pct": 60,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 0.8
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 38.8,
+        "pm10": 62.1,
+        "co_ppm": 0.6,
+        "aqi": 80,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 39,
+        "free_slots": 9,
+        "occupancy_pct": 81.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:37.518Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 38,
+        "vehicle_count": 45,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 6,
+        "lights_faulty": 2,
+        "power_watts": 270,
+        "lights": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 34.7,
+        "humidity_pct": 61,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 0.9
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 34.6,
+        "pm10": 55.3,
+        "co_ppm": 0.6,
+        "aqi": 72,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 40,
+        "free_slots": 8,
+        "occupancy_pct": 83.3
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:39.519Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 38,
+        "vehicle_count": 50,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.1,
+        "humidity_pct": 60,
+        "rainfall_mm": 8.7,
+        "wind_speed_kmph": 1.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 38.7,
+        "pm10": 62,
+        "co_ppm": 0.6,
+        "aqi": 80,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:41.526Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 34,
+        "vehicle_count": 54,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.3,
+        "humidity_pct": 59,
+        "rainfall_mm": 8.7,
+        "wind_speed_kmph": 1.2
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 36.8,
+        "pm10": 58.8,
+        "co_ppm": 0.6,
+        "aqi": 76,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 42,
+        "free_slots": 6,
+        "occupancy_pct": 87.5
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:43.533Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 37,
+        "vehicle_count": 54,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35,
+        "humidity_pct": 58,
+        "rainfall_mm": 8.7,
+        "wind_speed_kmph": 1.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 38.8,
+        "pm10": 62.1,
+        "co_ppm": 0.6,
+        "aqi": 80,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 41,
+        "free_slots": 7,
+        "occupancy_pct": 85.4
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:45.536Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 35,
+        "vehicle_count": 58,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.3,
+        "humidity_pct": 57,
+        "rainfall_mm": 8.7,
+        "wind_speed_kmph": 0.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 43.6,
+        "pm10": 69.7,
+        "co_ppm": 0.7,
+        "aqi": 88,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 42,
+        "free_slots": 6,
+        "occupancy_pct": 87.5
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:47.551Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 36,
+        "vehicle_count": 59,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.5,
+        "humidity_pct": 56,
+        "rainfall_mm": 8.7,
+        "wind_speed_kmph": 0
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 42.3,
+        "pm10": 67.7,
+        "co_ppm": 0.7,
+        "aqi": 86,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 43,
+        "free_slots": 5,
+        "occupancy_pct": 89.6
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:49.555Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 33,
+        "vehicle_count": 54,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 7,
+        "lights_faulty": 1,
+        "power_watts": 315,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.8,
+        "humidity_pct": 55,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 0.4
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 40.4,
+        "pm10": 64.7,
+        "co_ppm": 0.7,
+        "aqi": 83,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 44,
+        "free_slots": 4,
+        "occupancy_pct": 91.7
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:51.561Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 36,
+        "vehicle_count": 55,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.5,
+        "humidity_pct": 57,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 0.3
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 43.5,
+        "pm10": 69.6,
+        "co_ppm": 0.7,
+        "aqi": 88,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 45,
+        "free_slots": 3,
+        "occupancy_pct": 93.8
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T05:33:53.568Z",
+      "traffic": {
+        "sensor_id": "TRF-ERD-001",
+        "avg_speed_kmph": 39,
+        "vehicle_count": 57,
+        "congestion_level": "MEDIUM"
+      },
+      "streetlights": {
+        "total": 8,
+        "lights_on": 8,
+        "lights_faulty": 0,
+        "power_watts": 360,
+        "lights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "weather": {
+        "station_id": "WST-ERD-001",
+        "temperature_c": 35.7,
+        "humidity_pct": 57,
+        "rainfall_mm": 0,
+        "wind_speed_kmph": 0
+      },
+      "air": {
+        "monitor_id": "AQM-ERD-001",
+        "pm25": 47.8,
+        "pm10": 76.4,
+        "co_ppm": 0.8,
+        "aqi": 96,
+        "aqi_category": "MODERATE"
+      },
+      "parking": {
+        "lot_id": "PKG-ERD-001",
+        "total_slots": 48,
+        "occupied_slots": 45,
+        "free_slots": 3,
+        "occupancy_pct": 93.8
+      },
+      "emergency": {
+        "open_incidents": 0,
+        "severity": "NONE",
+        "type": "-",
+        "status": "ALL_CLEAR"
+      }
+    }
+  ]
+}

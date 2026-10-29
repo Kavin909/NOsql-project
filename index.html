@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart City Data Hub</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="sim.js"></script>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#05070f;color:#cfe8ff;font-family:'Segoe UI',system-ui,sans-serif;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+  header{display:flex;justify-content:space-between;align-items:center;padding:12px 22px;border-bottom:1px solid #0e3a4d;background:linear-gradient(90deg,#071526,#05070f)}
+  header h1{margin:0;font-size:18px;letter-spacing:4px;color:#00e5ff;text-shadow:0 0 12px #00e5ff88}
+  .live{font-size:12px;color:#7fb3c8}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#00ff99;box-shadow:0 0 8px #00ff99;margin-right:6px;animation:p 1.4s infinite}
+  @keyframes p{50%{opacity:.3}}
+  main{flex:1;display:grid;grid-template-columns:270px 1fr 330px;min-height:0}
+  aside{padding:12px;overflow:auto;background:#060b16}
+  #list{border-right:1px solid #0e3a4d}#detail{border-left:1px solid #0e3a4d}
+  .card{border:1px solid #11405a;border-radius:10px;padding:10px 12px;margin-bottom:10px;cursor:pointer;background:#08111f;transition:.2s}
+  .card:hover{border-color:#00e5ff;box-shadow:0 0 14px #00e5ff33}
+  .card.on{border-color:#00e5ff;background:#0a1d33;box-shadow:0 0 18px #00e5ff55}
+  .ct{font-size:12px;letter-spacing:3px;color:#00e5ff;margin-bottom:6px}
+  .row{display:flex;justify-content:space-between;font-size:13px;padding:2px 0;color:#9bc3d8}
+  .row b{color:#fff;font-weight:600}
+  .bar{height:4px;background:#0e2638;border-radius:3px;margin:2px 0 8px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#00e5ff,#ff2bd6);border-radius:3px;transition:width .6s}
+  #stage{position:relative;min-width:0}
+  #stage canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+  #hint{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font-size:11px;color:#4f7f94;letter-spacing:2px}
+  h2{margin:4px 0 12px;font-size:16px;letter-spacing:4px;color:#ff2bd6;text-shadow:0 0 10px #ff2bd666}
+  pre{font-size:11px;background:#040810;border:1px solid #0e3a4d;border-radius:8px;padding:8px;color:#69e6ff;max-height:190px;overflow:auto}
+  .lbl{font-size:11px;color:#4f7f94;letter-spacing:2px;margin:10px 0 4px}
+  @media(max-width:900px){main{grid-template-columns:1fr;grid-template-rows:auto 55vh auto;overflow:auto}body{overflow:auto;height:auto}#list{display:flex;gap:10px;overflow:auto;border:0}.card{min-width:210px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>SMART CITY DATA HUB // ERODE</h1>
+  <div class="live"><span class="dot"></span><span id="src">connecting</span> &nbsp;|&nbsp; <span id="ts"></span></div>
+</header>
+<main>
+  <aside id="list"></aside>
+  <div id="stage"><div id="hint">DRAG ROTATE &nbsp; SCROLL ZOOM &nbsp; CLICK A SENSOR CARD</div></div>
+  <aside id="detail"></aside>
+</main>
+
+<script>
+// ---------- domain config ----------
+// params: [jsonKey, label, unit, max for bar]
+const DOM = {
+  traffic:      { name:'TRAFFIC',      head:'avg_speed_kmph', build:sceneTraffic,
+    params:[['avg_speed_kmph','Avg speed','km/h',60],['vehicle_count','Vehicles','',120],['congestion_level','Congestion','']] },
+  streetlights: { name:'STREETLIGHTS', head:'lights_on', build:sceneLights,
+    params:[['lights_on','Lights ON','/8',8],['lights_faulty','Faulty','',8],['power_watts','Power','W',360]] },
+  weather:      { name:'WEATHER',      head:'temperature_c', build:sceneWeather,
+    params:[['temperature_c','Temperature','C',45],['humidity_pct','Humidity','%',100],['rainfall_mm','Rainfall','mm',12],['wind_speed_kmph','Wind','km/h',30]] },
+  air:          { name:'AIR QUALITY',  head:'aqi', build:sceneAir,
+    params:[['aqi','AQI','',300],['pm25','PM2.5','ug/m3',150],['pm10','PM10','ug/m3',250],['co_ppm','CO','ppm',3],['aqi_category','Category','']] },
+  parking:      { name:'PARKING',      head:'occupied_slots', build:sceneParking,
+    params:[['occupied_slots','Occupied','/48',48],['free_slots','Free','',48],['occupancy_pct','Occupancy','%',100]] },
+  emergency:    { name:'EMERGENCY',    head:'open_incidents', build:sceneEmergency,
+    params:[['open_incidents','Open incidents','',5],['severity','Severity',''],['type','Type',''],['status','Status','']] },
+};
+let cur = 'traffic', data = null, hist = {};
+
+// ---------- three.js base ----------
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({ antialias:true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setClearColor(0x05070f);
+stage.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x05070f, 0.016);
+const cam = new THREE.PerspectiveCamera(50, 1, 0.1, 300);
+scene.add(new THREE.AmbientLight(0x7799bb, 0.8));
+const sun = new THREE.DirectionalLight(0xbbd4ff, 0.9); sun.position.set(10, 25, 12); scene.add(sun);
+const grid = new THREE.GridHelper(120, 60, 0x00e5ff, 0x0b2c3d); grid.position.y = -0.02; scene.add(grid);
+
+function resize(){ const w = stage.clientWidth, h = stage.clientHeight; renderer.setSize(w, h); cam.aspect = w / h; cam.updateProjectionMatrix(); }
+new ResizeObserver(resize).observe(stage); resize();
+
+// orbit by hand
+let theta = 0.8, phi = 1.0, rad = 30, drag = false, px = 0, py = 0;
+const el = renderer.domElement;
+el.addEventListener('pointerdown', e => { drag = true; px = e.clientX; py = e.clientY; el.setPointerCapture(e.pointerId); });
+el.addEventListener('pointerup', () => drag = false);
+el.addEventListener('pointermove', e => { if (!drag) return; theta -= (e.clientX - px) * 0.008; phi = Math.min(1.5, Math.max(0.25, phi - (e.clientY - py) * 0.006)); px = e.clientX; py = e.clientY; });
+el.addEventListener('wheel', e => { e.preventDefault(); rad = Math.min(50, Math.max(10, rad + e.deltaY * 0.02)); }, { passive:false });
+
+// ---------- helpers ----------
+const M = (c, o={}) => new THREE.MeshStandardMaterial(Object.assign({ color:c, roughness:.7 }, o));
+const B = c => new THREE.MeshBasicMaterial({ color:c });
+function rng(s){ return () => (s = (s * 16807) % 2147483647) / 2147483647; }
+function ground(g, w, d, c=0x07101c){ const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), M(c)); m.rotation.x = -Math.PI/2; g.add(m); return m; }
+function skyline(g, ok, n=90){
+  const R = rng(7);
+  for (let i = 0; i < n; i++){
+    const x = (R()-.5)*80, z = (R()-.5)*80; if (!ok(x, z)) continue;
+    const h = 1 + R()*10, w = 1.5 + R()*2.5;
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, w), M(0x0a1426)); m.position.set(x, h/2, z); g.add(m);
+    const e = new THREE.LineSegments(new THREE.EdgesGeometry(m.geometry), new THREE.LineBasicMaterial({ color:0x00e5ff, transparent:true, opacity:.35 }));
+    e.position.copy(m.position); g.add(e);
+  }
+}
+
+// ---------- scenes: each returns { g, update(d,t,dt) } ----------
+function sceneTraffic(){
+  const g = new THREE.Group(); ground(g, 46, 9, 0x0b1220); skyline(g, (x,z) => Math.abs(z) > 7);
+  [-1.9, 0, 1.9].forEach(z => { const l = new THREE.Mesh(new THREE.BoxGeometry(46, .02, .06), B(0x1b6f88)); l.position.set(0, .02, z); g.add(l); });
+  const lanes = [-2.9, -1, 1, 2.9], cars = [], R = rng(3);
+  for (let i = 0; i < 44; i++){
+    const m = new THREE.Mesh(new THREE.BoxGeometry(1.7, .55, .85), M(0x00e5ff, { emissive:0x00e5ff, emissiveIntensity:.35 }));
+    m.position.set((R()-.5)*44, .35, lanes[i%4]); m.userData = { dir: i%4 < 2 ? 1 : -1, k: .8 + R()*.4 }; cars.push(m); g.add(m);
+  }
+  return { g, update(d, t, dt){
+    const n = Math.round(d.vehicle_count / 120 * 44);
+    const c = d.congestion_level === 'HIGH' ? 0xff3355 : d.congestion_level === 'MEDIUM' ? 0xffb020 : 0x00e5ff;
+    cars.forEach((m, i) => {
+      m.visible = i < n; m.material.color.setHex(c); m.material.emissive.setHex(c);
+      m.position.x += m.userData.dir * d.avg_speed_kmph * 0.1 * m.userData.k * dt;
+      if (Math.abs(m.position.x) > 23) m.position.x = -23 * m.userData.dir;
+    });
+  }};
+}
+
+function sceneLights(){
+  const g = new THREE.Group(); ground(g, 46, 8, 0x0b1220); skyline(g, (x,z) => Math.abs(z) > 8);
+  const L = [];
+  for (let i = 0; i < 8; i++){
+    const x = -17.5 + i*5;
+    const pole = new THREE.Mesh(new THREE.CylinderGeometry(.08, .12, 5.2), M(0x2a3b52)); pole.position.set(x, 2.6, -3.6);
+    const bulb = new THREE.Mesh(new THREE.SphereGeometry(.32, 16, 16), B(0xffe9a0)); bulb.position.set(x, 5.3, -3.6);
+    const cone = new THREE.Mesh(new THREE.ConeGeometry(2.6, 5.2, 24, 1, true), new THREE.MeshBasicMaterial({ color:0xffe9a0, transparent:true, opacity:.14, side:THREE.DoubleSide, depthWrite:false }));
+    cone.position.set(x, 2.65, -3.6); g.add(pole, bulb, cone); L.push({ bulb, cone });
+  }
+  return { g, update(d, t){
+    d.lights.forEach((on, i) => { const o = L[i];
+      if (on){ o.bulb.material.color.setHex(0xffe9a0); o.cone.visible = true; }
+      else { o.bulb.material.color.setHex(Math.sin(t*8 + i) > 0 ? 0xff2244 : 0x330008); o.cone.visible = false; } });
+  }};
+}
+
+function sceneWeather(){
+  const g = new THREE.Group(); ground(g, 70, 70); skyline(g, (x,z) => Math.hypot(x,z) > 15, 70);
+  const sunM = new THREE.Mesh(new THREE.SphereGeometry(1.8, 24, 24), B(0xffd34d)); sunM.position.set(-10, 13, -8); g.add(sunM);
+  const clouds = [], R = rng(11);
+  for (let i = 0; i < 7; i++){
+    const c = new THREE.Group(), mat = M(0xffffff, { transparent:true, opacity:.92 });
+    for (let j = 0; j < 4; j++){ const s = new THREE.Mesh(new THREE.SphereGeometry(1.1 + R()*.8, 14, 14), mat); s.position.set(j*1.4 - 2, R()*.5, R()-.5); c.add(s); }
+    c.position.set((R()-.5)*34, 9 + R()*3, (R()-.5)*20); c.userData.mat = mat; clouds.push(c); g.add(c);
+  }
+  const N = 700, pos = new Float32Array(N*3);
+  for (let i = 0; i < N; i++){ pos[i*3] = (R()-.5)*30; pos[i*3+1] = R()*12; pos[i*3+2] = (R()-.5)*30; }
+  const rg = new THREE.BufferGeometry(); rg.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const rain = new THREE.Points(rg, new THREE.PointsMaterial({ color:0x66ccff, size:.14 })); g.add(rain);
+  return { g, update(d, t, dt){
+    sunM.material.color.setHSL(0.6 - 0.55 * Math.min(1, Math.max(0, (d.temperature_c - 22) / 16)), .9, .6);
+    const sh = 1.05 - d.humidity_pct / 100 * .6;
+    clouds.forEach(c => { c.userData.mat.color.setRGB(sh, sh, Math.min(1, sh + .05)); c.position.x += d.wind_speed_kmph * .02 * dt * 3; if (c.position.x > 20) c.position.x = -20; });
+    rg.setDrawRange(0, Math.min(N, Math.round(d.rainfall_mm * 80)));
+    for (let i = 0; i < N; i++){ pos[i*3+1] -= dt * 14; if (pos[i*3+1] < 0) pos[i*3+1] = 12; }
+    rg.attributes.position.needsUpdate = true;
+  }};
+}
+
+function sceneAir(){
+  const g = new THREE.Group(); ground(g, 70, 70); skyline(g, (x,z) => Math.hypot(x,z) > 16, 80);
+  const N = 1400, pos = new Float32Array(N*3), R = rng(5);
+  for (let i = 0; i < N; i++){ const a = R()*6.283, r = Math.sqrt(R())*14; pos[i*3] = Math.cos(a)*r; pos[i*3+1] = R()*10; pos[i*3+2] = Math.sin(a)*r; }
+  const pg = new THREE.BufferGeometry(); pg.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const pts = new THREE.Points(pg, new THREE.PointsMaterial({ size:.2, transparent:true, opacity:.85, color:0x00ff99 })); g.add(pts);
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(2.4, .14, 16, 64), B(0x00ff99)); ring.position.y = 1.2; ring.rotation.x = Math.PI/2; g.add(ring);
+  const core = new THREE.Mesh(new THREE.SphereGeometry(1, 16, 16), new THREE.MeshBasicMaterial({ color:0x00ff99, wireframe:true })); core.position.y = 1.2; g.add(core);
+  return { g, update(d, t, dt){
+    const c = d.aqi <= 50 ? 0x00ff99 : d.aqi <= 100 ? 0xffee33 : d.aqi <= 150 ? 0xff9a1f : d.aqi <= 200 ? 0xff3355 : 0xb04dff;
+    pts.material.color.setHex(c); ring.material.color.setHex(c); core.material.color.setHex(c);
+    pg.setDrawRange(0, Math.round(200 + d.pm25 / 150 * 1200));
+    pts.rotation.y += dt * .06; ring.rotation.z += dt; core.rotation.y += dt * .5;
+  }};
+}
+
+function sceneParking(){
+  const g = new THREE.Group(); ground(g, 24, 18, 0x0b1220); skyline(g, (x,z) => Math.abs(x) > 15 || Math.abs(z) > 12);
+  const cars = [], pal = [0xff2bd6, 0x00e5ff, 0x7a5cff, 0xffb020], R = rng(9);
+  for (let i = 0; i < 48; i++){
+    const x = -8.75 + (i % 8) * 2.5, z = -6.25 + Math.floor(i / 8) * 2.5;
+    const s = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(2, .05, 2.1)), new THREE.LineBasicMaterial({ color:0x1b8fb0 })); s.position.set(x, .03, z); g.add(s);
+    const c = pal[i % 4], car = new THREE.Mesh(new THREE.BoxGeometry(1, .65, 1.6), M(c, { emissive:c, emissiveIntensity:.3 })); car.position.set(x, .38, z); car.visible = false; cars.push(car); g.add(car);
+  }
+  const order = [...Array(48).keys()]; for (let i = 47; i > 0; i--){ const j = Math.floor(R() * (i+1)); [order[i], order[j]] = [order[j], order[i]]; }
+  return { g, update(d){ order.forEach((idx, k) => cars[idx].visible = k < d.occupied_slots); }};
+}
+
+function sceneEmergency(){
+  const g = new THREE.Group(); ground(g, 70, 70); skyline(g, (x,z) => Math.hypot(x,z) > 16, 100);
+  const tower = new THREE.Mesh(new THREE.CylinderGeometry(.5, .8, 6), M(0x1a2a44)); tower.position.y = 3; g.add(tower);
+  const bar = new THREE.Group(); bar.position.y = 6.4;
+  const r1 = new THREE.Mesh(new THREE.SphereGeometry(.4, 12, 12), B(0xff2244)); r1.position.x = 1;
+  const r2 = new THREE.Mesh(new THREE.SphereGeometry(.4, 12, 12), B(0x2266ff)); r2.position.x = -1; bar.add(r1, r2); g.add(bar);
+  const spots = [[-6,3],[7,-4],[2,9],[-9,-7],[10,8]], marks = [];
+  spots.forEach(([x, z]) => {
+    const beam = new THREE.Mesh(new THREE.CylinderGeometry(.15, .15, 10), new THREE.MeshBasicMaterial({ color:0xff2244, transparent:true, opacity:.5 })); beam.position.set(x, 5, z);
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(1, .06, 8, 40), new THREE.MeshBasicMaterial({ color:0xff2244, transparent:true })); ring.rotation.x = Math.PI/2; ring.position.set(x, .1, z);
+    g.add(beam, ring); marks.push({ beam, ring });
+  });
+  return { g, update(d, t, dt){
+    const c = { HIGH:0xff2244, MEDIUM:0xffa520, LOW:0x33ccff, NONE:0x00ff99 }[d.severity] || 0x00ff99;
+    marks.forEach((m, i) => { const on = i < d.open_incidents, p = (t * .8 + i * .3) % 1;
+      m.beam.visible = m.ring.visible = on; m.beam.material.color.setHex(c); m.ring.material.color.setHex(c);
+      m.ring.scale.setScalar(1 + p * 2.5); m.ring.material.opacity = 1 - p; });
+    bar.rotation.y += dt * 4;
+  }};
+}
+
+// ---------- scene switching ----------
+const SC = {}; let active = null;
+function setCur(k){
+  cur = k; if (active) scene.remove(active.g);
+  active = SC[k] || (SC[k] = DOM[k].build()); scene.add(active.g);
+  if (data) render();
+}
+
+// ---------- panels ----------
+const fmt = v => typeof v === 'number' ? (Number.isInteger(v) ? v : v.toFixed(1)) : v;
+function row(d, p, bars = true){
+  const [k, label, unit, max] = p, v = d[k];
+  const bar = bars && max && typeof v === 'number' ? `<div class="bar"><i style="width:${Math.min(100, v / max * 100)}%"></i></div>` : '';
+  return `<div class="row"><span>${label}</span><b>${fmt(v)} ${unit}</b></div>${bar}`;
+}
+function render(){
+  document.getElementById('list').innerHTML = Object.entries(DOM).map(([k, D]) =>
+    `<div class="card ${k === cur ? 'on' : ''}" data-k="${k}"><div class="ct">${D.name}</div>${D.params.slice(0, 3).map(p => row(data[k], p, false)).join('')}</div>`).join('');
+  document.getElementById('detail').innerHTML =
+    `<h2>${DOM[cur].name}</h2>${DOM[cur].params.map(p => row(data[cur], p)).join('')}` +
+    `<div class="lbl">TREND: ${DOM[cur].head}</div><canvas id="spark" width="300" height="70"></canvas>` +
+    `<div class="lbl">LIVE JSON</div><pre>${JSON.stringify(data[cur], null, 1)}</pre>`;
+  spark();
+}
+function spark(){
+  const c = document.getElementById('spark').getContext('2d'), h = hist[cur] || [];
+  c.strokeStyle = '#00e5ff'; c.lineWidth = 2; c.beginPath();
+  const lo = Math.min(...h), hi = Math.max(...h), rg = (hi - lo) || 1;
+  h.forEach((v, i) => { const x = i / Math.max(1, h.length - 1) * 300, y = 64 - (v - lo) / rg * 58; i ? c.lineTo(x, y) : c.moveTo(x, y); });
+  c.stroke();
+}
+document.getElementById('list').addEventListener('click', e => { const c = e.target.closest('.card'); if (c) setCur(c.dataset.k); });
+
+// ---------- data ----------
+async function pull(){
+  let src;
+  try { const r = await fetch('/api/data', { cache:'no-store' }); if (!r.ok) throw 0; data = await r.json(); src = 'server | sensor_data.json'; }
+  catch (e) { data = simTick(); src = 'in-browser simulator'; }
+  Object.keys(DOM).forEach(k => { (hist[k] = hist[k] || []).push(data[k][DOM[k].head]); if (hist[k].length > 40) hist[k].shift(); });
+  document.getElementById('src').textContent = src;
+  document.getElementById('ts').textContent = new Date(data.timestamp).toLocaleTimeString();
+  render();
+}
+
+// ---------- loop ----------
+let last = performance.now();
+function frame(now){
+  const dt = Math.min(.05, (now - last) / 1000); last = now;
+  if (!drag) theta += dt * .12;
+  cam.position.set(rad * Math.sin(phi) * Math.sin(theta), rad * Math.cos(phi), rad * Math.sin(phi) * Math.cos(theta));
+  cam.lookAt(0, 1.5, 0);
+  if (data && active) active.update(data[cur], now / 1000, dt);
+  renderer.render(scene, cam);
+  requestAnimationFrame(frame);
+}
+setCur('traffic'); pull(); setInterval(pull, 2000); requestAnimationFrame(frame);
+</script>
+</body>
+</html>
